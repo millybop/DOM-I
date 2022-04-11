@@ -40,3 +40,74 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const navOne = document.querySelector('nav a');
+const navTwo = navOne.nextElementSibling;
+const navThree = navTwo.nextElementSibling;
+const navFour = navThree.nextElementSibling;
+const navFive = navFour.nextElementSibling;
+const navSix = navFive.nextElementSibling;
+
+const cta = document.querySelector('.cta-text h1');
+const ctaButton = cta.nextElementSibling;
+
+const headers = document.querySelectorAll('.text-content');
+const headersArray = Array.from(headers);
+const headerOne = headersArray[0].querySelector('h4');
+const headerTwo = headersArray[1].querySelector('h4');
+const headerThree = headersArray[2].querySelector('h4');
+const headerFour = headersArray[3].querySelector('h4');
+const headerFive = headersArray[4].querySelector('h4');
+
+const textOne = headerOne.nextElementSibling;
+const textTwo = headerTwo.nextElementSibling;
+const textThree = headerThree.nextElementSibling;
+const textFour = headerFour.nextElementSibling;
+const textFive = headerFive.nextElementSibling;
+
+const contactHeader = document.querySelector('.contact h4');
+const contactLineOne = contactHeader.nextElementSibling;
+const contactLineTwo = contactLineOne.nextElementSibling;
+const contactLineThree = contactLineTwo.nextElementSibling;
+
+const footer = document.querySelector('footer a');
+
+const images = document.querySelectorAll('img');
+const imagesArray = Array.from(images);
+
+const imageOne = imagesArray[0];
+const imageTwo = imagesArray[1];
+const imageThree = imagesArray[2];
+
+navOne.textContent = siteContent['nav']['nav-item-1'];
+navTwo.textContent = siteContent['nav']['nav-item-2'];
+navThree.textContent = siteContent['nav']['nav-item-3'];
+navFour.textContent = siteContent['nav']['nav-item-4'];
+navFive.textContent = siteContent['nav']['nav-item-5'];
+navSix.textContent = siteContent['nav']['nav-item-6'];
+
+headerOne.textContent = siteContent["main-content"]['features-h4'];
+headerTwo.textContent = siteContent["main-content"]['about-h4'];
+headerThree.textContent = siteContent["main-content"]['services-h4'];
+headerFour.textContent = siteContent["main-content"]['product-h4'];
+headerFive.textContent = siteContent["main-content"]['vision-h4'];
+
+textOne.textContent = siteContent['main-content']['features-content'];
+textTwo.textContent = siteContent['main-content']['about-content'];
+textThree.textContent = siteContent['main-content']['services-content'];
+textFour.textContent = siteContent['main-content']['product-content'];
+textFive.textContent = siteContent['main-content']['vision-content'];
+
+cta.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactLineOne.textContent = siteContent['contact']['address'];
+contactLineTwo.textContent = siteContent['contact']['phone'];
+contactLineThree.textContent = siteContent['contact']['email'];
+
+footer.textContent = siteContent['footer']['copyright'];
+
+imageOne.src = siteContent['images']['logo-img'];
+imageTwo.src = siteContent['images']['cta-img'];
+imageThree.src = siteContent['images']['logo-img'];
